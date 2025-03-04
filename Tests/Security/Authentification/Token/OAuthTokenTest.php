@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace FOS\OAuthServerBundle\Tests\Security\Authentification\Token;
 
 use FOS\OAuthServerBundle\Model\TokenInterface;
-use FOS\OAuthServerBundle\Security\Authentication\Token\OAuthToken;
+use FOS\OAuthServerBundle\Security\Authenticator\Token\OAuthToken;
 
 class OAuthTokenTest extends \PHPUnit\Framework\TestCase
 {

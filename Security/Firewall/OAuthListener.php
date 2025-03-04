@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace FOS\OAuthServerBundle\Security\Firewall;
 
-use FOS\OAuthServerBundle\Security\Authentication\Token\OAuthToken;
+use FOS\OAuthServerBundle\Security\Authenticator\Token\OAuthToken;
 use OAuth2\OAuth2;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\RequestEvent;

@@ -14,8 +14,8 @@ declare(strict_types=1);
 namespace FOS\OAuthServerBundle\Tests\Security\Authentication\Provider;
 
 use FOS\OAuthServerBundle\Model\AccessToken;
-use FOS\OAuthServerBundle\Security\Authentication\Provider\OAuthProvider;
-use FOS\OAuthServerBundle\Security\Authentication\Token\OAuthToken;
+use FOS\OAuthServerBundle\Security\Authenticator\Provider\OAuthProvider;
+use FOS\OAuthServerBundle\Security\Authenticator\Token\OAuthToken;
 use OAuth2\OAuth2;
 use Symfony\Component\Security\Core\User\UserCheckerInterface;
 use Symfony\Component\Security\Core\User\UserInterface;

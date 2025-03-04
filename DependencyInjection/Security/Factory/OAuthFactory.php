@@ -38,7 +38,7 @@ class OAuthFactory implements AuthenticatorFactoryInterface
             return new Reference($firewallName);
         }, $firewallAuthenticationProviders);
         $container
-            ->setDefinition($managerId = 'security.authenticator.oauth2.'.$firewallName, new ChildDefinition('fos_oauth_server.security.authenticator.manager'))
+            ->setDefinition($managerId = 'security.authenticator.oauth2.'.$firewallName, new ChildDefinition('fos_oauth_server.security.authenticator.provider'))
 //            ->replaceArgument(0, $authenticators)
 //            ->replaceArgument(2, new Reference($firewallEventDispatcherId))
             ->addTag('monolog.logger', ['channel' => 'security'])

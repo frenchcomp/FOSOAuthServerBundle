@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace FOS\OAuthServerBundle\Tests\Security\Firewall;
 
-use FOS\OAuthServerBundle\Security\Authentication\Token\OAuthToken;
+use FOS\OAuthServerBundle\Security\Authenticator\Token\OAuthToken;
 use FOS\OAuthServerBundle\Security\Firewall\OAuthListener;
 use FOS\OAuthServerBundle\Tests\TestCase;
 use OAuth2\OAuth2;

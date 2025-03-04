@@ -74,11 +74,11 @@ class OAuthFactoryTest extends \PHPUnit\Framework\TestCase
             ->withConsecutive(
                 [
                     'security.authentication.provider.fos_oauth_server.'.$id,
-                    new ChildDefinition('fos_oauth_server.security.authentication.provider'),
+                    new ChildDefinition('fos_oauth_server.security.authenticator.provider'),
                 ],
                 [
                     'security.authentication.listener.fos_oauth_server.'.$id,
-                    new ChildDefinition('fos_oauth_server.security.authentication.listener'),
+                    new ChildDefinition('fos_oauth_server.security.authenticator.listener'),
                 ]
             )
             ->willReturnOnConsecutiveCalls(

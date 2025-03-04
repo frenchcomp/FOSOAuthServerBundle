@@ -11,7 +11,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace FOS\OAuthServerBundle\Security\Authentication\Token;
+namespace FOS\OAuthServerBundle\Security\Authenticator\Token;
 
 use Symfony\Component\Security\Core\Authentication\Token\AbstractToken;
 
