@@ -103,6 +103,7 @@ class FOSOAuthServerExtension extends Extension
 
     /**
      * {@inheritdoc}
+     * @return string
      */
     public function getAlias()
     {
