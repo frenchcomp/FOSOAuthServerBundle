@@ -108,6 +108,8 @@ class Oauth2Authenticator extends AbstractAuthenticator
         $token->setToken($accessTokenBadge->getAccessToken()->getToken());
         if (!empty($user = $accessTokenBadge->getAccessToken()->getUser())) {
             $token->setUser($user);
+            //Deprecated but they have a bug in SF Authorization Checker
+            $token->setAuthenticated(true);
         }
 
         return $token;
